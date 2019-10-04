@@ -1,0 +1,40 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Save Product</title>
+    <style type="text/css">@import url(css/main.css);</style>
+</head>
+<body>
+<div id="global">
+    <h2>List of Products</h2>
+
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Description</th>
+        </tr>
+
+        <c:forEach var="product" items="${products}">
+            <tr>
+                <td>${product.name}</td>
+                <td>${product.category.name}</td>
+                <td>${product.description}</td>
+            </tr>
+        </c:forEach>
+    </table>
+
+    <spring:url value="/product" var="product_url">
+    </spring:url>
+    <a href="${product_url}">
+        <button>Add product</button>
+    </a>
+
+
+</div>
+</body>
+</html>

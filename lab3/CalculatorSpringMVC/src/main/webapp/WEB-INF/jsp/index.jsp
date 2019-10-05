@@ -12,5 +12,6 @@
 </head>
 <body>
 <a href="calculate">Calculator</a>
+${a};
 </body>
 </html>

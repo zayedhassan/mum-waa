@@ -45,7 +45,6 @@ public class StudentController {
 
     @RequestMapping(value = "/success", method = RequestMethod.GET)
     public String success() {
-
         return "success";
     }
 

@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS testDb;
+CREATE TABLE testDb(
+
+)

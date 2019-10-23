@@ -1,5 +1,4 @@
 function makeAjaxCall() {
-
     let data = JSON.stringify(serializeObject($("#employeeForm")));
     $.ajax({
         type: "POST",
@@ -73,6 +72,5 @@ function serializeObject(form) {
         jsonObject[this.name] = this.value;
     });
     return jsonObject;
-
 };
 
